@@ -106,7 +106,7 @@ function love.draw()
   end
 
   love.graphics.printf("Score: " .. score, 0 , love.graphics.getHeight() -100, love.graphics.getWidth(), "center")
-  
+
   love.graphics.draw(sprites.player,player.x,player.y,player_mouse_angle(), nil, nil, sprites.player:getWidth()/2, sprites.player:getHeight()/2)
 
   for i,z in ipairs(zombies) do
@@ -185,3 +185,4 @@ end
 function distanceBetween(x1, y1, x2, y2)
   return math.sqrt((y2- y1)^2 + (x2 - x1)^2)
 end
+print("hello")
